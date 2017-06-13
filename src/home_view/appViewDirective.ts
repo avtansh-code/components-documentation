@@ -1,5 +1,5 @@
 
-import MainView from './main-view/mainview.directive';
+import MainView from './main-view/mainView/mainview.directive';
 import SideNavBar from './main-view/sidenavbar/sidenavbar.directive'
 
 export default function registerAppDirective(AppName: string): void {
