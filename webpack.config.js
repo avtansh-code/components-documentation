@@ -15,7 +15,7 @@ module.exports = {
     angular: 'angular',
   },
   output: {
-    path: path.resolve(__dirname, 'flask_application/static'),
+    path: path.resolve(__dirname, 'static/'),
     publicPath: '/',
     filename: '[name].[chunkhash].js',
     sourceMapFilename: '[name].[chunkhash].map',

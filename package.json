@@ -16,12 +16,9 @@
     "angular-animate": "^1.6.4",
     "angular-aria": "^1.6.4",
     "angular-material": "^1.1.4",
-    "@types/angular": "^1.5.16",
-    "@types/angular-material": "^1.1.39",
-    "@types/angular-ui-bootstrap": "^0.13.35",
-    "@types/node": "^6.0.45",
     "angular-mocks": "^1.5.5",
-    "angular-ui-bootstrap": "^0.13.4",
+    "angular-sanitize": "^1.6.4",
+    "angular-ui-bootstrap": "^2.5.0",
     "angular-ui-router": "^0.3.2",
     "awesome-typescript-loader": "^1.1.1",
     "babel-polyfill": "^6.16.0",
@@ -46,15 +43,15 @@
     "istanbul-instrumenter-loader": "^0.2.0",
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.5.2",
-    "jquery": "^3.1.1",
+    "jquery": "^3.2.1",
     "karma": "^0.13.22",
     "karma-browserify": "^5.0.5",
     "karma-chrome-launcher": "^1.0.1",
     "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.1",
-    "karma-webpack": "^1.8.0",
     "karma-source-map-support": "^1.1.0",
+    "karma-webpack": "^1.8.0",
     "less-loader": "^2.2.3",
     "merge2": "^1.0.2",
     "moment": "^2.15.1",
@@ -83,14 +80,8 @@
     "webpack-dev-server": "^1.16.2",
     "webpack-split-by-path": "0.0.10"
   },
-  "devDependencies": {
-    "webpack": "^2.6.1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "browserify-shim": {
-    "angular": "global:angular"
-  },
   "homepage": "https://bitbucket.org/elucidatainc/components-documentation#readme"
 }

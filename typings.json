@@ -1,6 +1,6 @@
 {
   "name": "components-documentation",
-  "version": false,
+  "version": "1.0.0",
   "globalDependencies": {
     "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#513510a89acc648422c9abb047265116198f99ee",
     "angular-material": "github:DefinitelyTyped/DefinitelyTyped/angular-material/angular-material.d.ts#513510a89acc648422c9abb047265116198f99ee",

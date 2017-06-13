@@ -1,24 +1,14 @@
-import 'babel-polyfill';
-import 'es5-shim';
-import 'es6-shim';
-import 'es6-promise';
-import 'ts-helper';
-import 'isomorphic-fetch';
 
-// import 'lodash';
-import $ from 'jquery';
-import jQuery from 'jquery';
-window.$ = window.jQuery = $;
+/// <reference path="../typings/index.d.ts" />
+export const AppName: string = 'app';
 
-import 'bootstrap';
-
+import {AppName as HomeCore} from './home_core/main';
+import {AppName as HomeView} from './home_view/main';
 
 const angular = require('angular');
 
-
-import {AppName} from './home_page/main'
-
-angular.module('app', [AppName])
+angular
+    .module( AppName, [HomeCore, HomeView]);
 
 declare const __TEST__: boolean;
 if (!__TEST__) {
