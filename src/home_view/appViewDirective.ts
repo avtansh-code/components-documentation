@@ -1,5 +1,6 @@
 
 import MainView from './main-view/mainview.directive';
+import SideNavBar from './main-view/sidenavbar/sidenavbar.directive'
 
 export default function registerAppDirective(AppName: string): void {
 
@@ -8,5 +9,6 @@ export default function registerAppDirective(AppName: string): void {
     angular
         .module(AppName)
         .directive('mainView', MainView.Factory())
+        .directive('sidenavbar',SideNavBar.Factory())
 
 }
