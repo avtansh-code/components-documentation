@@ -5,7 +5,7 @@ export const AppName: string = 'home.view';
 const angular = require('angular');
 //const uiRouter = require('angular-ui-router');
 
-const App = angular.module(AppName, []);
+const App = angular.module(AppName, ['ngMaterial']);
 
 // angular
 //     .module(AppName)
