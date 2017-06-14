@@ -36,7 +36,10 @@ export default class ProgressButtonDemoController {
   constructor() {
     
   }
-
+  /**
+   * @returns void
+   * changes button state to inprogress
+   */
   private toProgressState(): void {
       this.state = 3;
   }
