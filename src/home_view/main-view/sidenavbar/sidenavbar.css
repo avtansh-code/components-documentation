@@ -1,14 +1,52 @@
 .sidenavToolbar{
-    height: 100px;
+    height: 20%;
+    width: 100%;
+    padding:5%;
+    position:relative;
+    z-index:10;
+    color:white;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
-    background-color: #389bff !important;
-    font-family: FranklinGothic;
     font-size: 20px;
-    padding-top: 15px;
-    color: #ffffff !important;
+}
+
+.sidenavbarStyle {
+    height: 100vh;
+    background-color: #106CC8;
+    border-bottom: 1px solid #267ED5;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    z-index: 2;
+    color:white;
+}
+
+.itemStyle {
+    width:100%;
+    text-align:left;
+    padding-left:5%;
+    margin-left:0px;
+}
+
+.accordionStyle {
+    position:relative;
+    z-index: 2;
+    border:0px;
+    color:white;
+}
+
+.accordionGroupStyle {
+    position:relative;
+    z-index: 2;
+    border:0px;
+    margin:0px;
+    border-radius:0px;
+    background:  #106cc8;
+    color:white;
+}
+
+.hrStyle {
+    margin: 0px;
 }

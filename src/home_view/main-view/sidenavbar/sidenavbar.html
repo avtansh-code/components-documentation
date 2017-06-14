@@ -1,34 +1,29 @@
 
 <md-sidenav
-    class="md-sidenav-left" style="height: 100vh;background-color: #106CC8;
-    border-bottom: 1px solid #267ED5;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
-    z-index: 2;
-    color:white;"
+    class="md-sidenav-left {{vm.style['sidenavbarStyle']}} " 
     md-component-id="left"
     md-is-locked-open="$mdMedia('gt-sm')"
     tabindex="-1"
     md-whiteframe="4">
-    <md-toolbar  style="height: 20%;width: 100%;padding:5%;position:relative;z-index:10;color:white;" ng-click="vm.changeState(0)">Reusable Front-end Component</md-toolbar>
+    <md-toolbar  class="{{vm.style['sidenavToolbar']}}" ng-click="vm.changeState(0)">Reusable Front-end Component</md-toolbar>
     
-    <hr style="margin:0px">
-    <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(1)">Getting Started</md-button>
+    <hr class="{{vm.style['hrStyle']}}">
+    <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(1)">Getting Started</md-button>
     
-    <uib-accordion close-others="true" style="position:relative;z-index: 2;border:0px;color:white;">
-    <div uib-accordion-group class="panel-default accordionHeadingStyle" is-open="status.isCustomHeaderOpen" style="position:relative;z-index: 2;border:0px;margin:0px;border-radius:0px;background:  #106cc8;color:white;">
+    <uib-accordion close-others="true" class="{{vm.style['accordionStyle']}}">
+    <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.isCustomHeaderOpen" >
       <uib-accordion-heading>
         Demos <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isCustomHeaderOpen, 'glyphicon-chevron-right': !status.isCustomHeaderOpen}"></i>
       </uib-accordion-heading>
-      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(2)">Progress-Button</md-button>
-      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(3)">File Validation Log</md-button>
+      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(2)">Progress-Button</md-button>
+      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(3)">File Validation Log</md-button>
     </div>
-    <div uib-accordion-group class="panel-default accordionHeadingStyle" is-open="status.open" style="position:relative;z-index: 2;border:0px;margin:0px;border-radius:0px;background:  #106cc8;color:white;">
+    <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.open" >
       <uib-accordion-heading>
        Directive<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
       </uib-accordion-heading>
-      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(4)">progress-button</md-button>
-      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(5)">file-tabs</md-button>
+      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(4)">progress-button</md-button>
+      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(5)">file-tabs</md-button>
     </div>
   </uib-accordion>
 </md-sidenav>
