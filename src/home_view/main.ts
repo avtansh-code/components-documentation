@@ -4,21 +4,44 @@ import registerAppDirective from './appViewDirective';
 export const AppName: string = 'home.view';
 const angular = require('angular');
 const uibootstrap = require('angular-ui-bootstrap');
-//const uiRouter = require('angular-ui-router');
+const uiRouter = require('angular-ui-router');
 
-const App = angular.module(AppName, ['ngMaterial', uibootstrap]);
+const App = angular.module(AppName, ['ngMaterial', uibootstrap, uiRouter]);
 
-// angular
-//     .module(AppName)
-//     .config( ($stateProvider: any,
-//              $httpProvider: angular.IHttpService, $urlRouterProvider: any): void => {
-//             $stateProvider
-//             // .state('DrugHunter', {
-//             //     url: "/DrugHunter",
-//             //     template: '<main-view />'
-//             // })
-            
-//             $urlRouterProvider.otherwise('/login');
-//     });
+angular
+    .module(AppName)
+    .config( ($stateProvider: any,
+              $urlRouterProvider: any): void => {
+            $stateProvider
+            .state('main', {
+                url: "/main",
+                template: '<main-view />'
+            })
+             .state('main.introductionPage', {
+                url: "/introduction",
+                 template: '<introduction-page />'
+            })
+            .state('main.gettingStarted', {
+                url: "/getting-started",
+                template: '<getting-started />'
+            })
+            .state('main.progressbuttonDemo', {
+                url: "/demo/progress-button",
+                template: '<progress-button-demo />'
+            })
+            .state('main.filevalidationlogDemo', {
+                url: "/demo/filevalidationlog",
+                template: '<filevalidationlog-demo />'
+            })
+            .state('main.progressButton', {
+                url: "/directive/progress-button",
+                template: '<progress-button-directive />'
+            })
+            .state('main.fileTabs', {
+                url: "/directive/fileTabs",
+                template: '<file-tabs-directive />'
+            })  
+            $urlRouterProvider.otherwise('/main/introduction');
+    });
 
 registerAppDirective(AppName);
