@@ -1,0 +1,13 @@
+.panel-title a { 
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.panel-body {
+    padding: 0px;
+}
+
+.accordionHeadingStyle > .panel-heading {
+    background:  #106cc8;
+    color: white;
+}
