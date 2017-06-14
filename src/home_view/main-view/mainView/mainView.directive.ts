@@ -1,8 +1,8 @@
 
-import MainViewController from './mainview.controller';
+import MainViewController from './mainView.controller';
 
 export default class MainView {
-    public template = require('./mainview.html');
+    public template = require('./mainView.html');
     public scope ={
         
     };

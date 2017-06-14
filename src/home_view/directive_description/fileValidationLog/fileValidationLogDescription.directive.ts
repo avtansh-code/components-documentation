@@ -1,8 +1,8 @@
 
-import FilevalidationlogDescriptionController from './filevalidationlogdescription.controller';
+import FilevalidationlogDescriptionController from './fileValidationLogDescription.controller';
 
 export default class FilevalidationlogDescription {
-    public template = require('./filevalidationlogdescription.html');
+    public template = require('./fileValidationLogDescription.html');
     public scope ={
         
     };

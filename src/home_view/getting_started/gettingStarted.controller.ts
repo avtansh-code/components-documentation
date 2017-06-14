@@ -2,7 +2,7 @@
 
 export default class GettingStartedController {
     
-  private style = require('./gettingstarted.css');
+  private style = require('./gettingStarted.css');
   
   constructor() {
     

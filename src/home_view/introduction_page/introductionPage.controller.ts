@@ -2,7 +2,7 @@
 
 export default class IntroductionPageController {
     
-  private style = require('./introductionpage.css');
+  private style = require('./introductionPage.css');
   
   constructor() {
     

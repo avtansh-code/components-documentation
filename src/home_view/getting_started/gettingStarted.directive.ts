@@ -1,8 +1,8 @@
 
-import GettingStartedController from './gettingstarted.controller';
+import GettingStartedController from './gettingStarted.controller';
 
 export default class GettingStarted {
-    public template = require('./gettingstarted.html');
+    public template = require('./gettingStarted.html');
     public scope ={
         
     };

@@ -1,8 +1,8 @@
 
-import ProgressButtonDemoController from './progressbuttondemo.controller';
+import ProgressButtonDemoController from './progressButtonDemo.controller';
 
 export default class ProgressButtonDemo {
-    public template = require('./progressbuttondemo.html');
+    public template = require('./progressButtonDemo.html');
     public scope ={
         
     };

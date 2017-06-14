@@ -1,7 +1,7 @@
 
 
 export default class MainViewController {
-  private style = require('./mainview.css');
+  private style = require('./mainView.css');
   
   constructor() {
     

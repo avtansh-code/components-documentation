@@ -2,7 +2,7 @@
 
 export default class ProgressButtonDescriptionController {
     
-  private style = require('./progressbuttondescription.css');
+  private style = require('./progressButtonDescription.css');
   
   constructor() {
     

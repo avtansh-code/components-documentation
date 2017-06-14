@@ -2,7 +2,7 @@
 
 export default class FilevalidationlogDescriptionController {
     
-  private style = require('./filevalidationlogdescription.css');
+  private style = require('./fileValidationLogDescription.css');
   
   constructor() {
     

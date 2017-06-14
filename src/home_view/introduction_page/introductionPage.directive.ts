@@ -1,8 +1,8 @@
 
-import IntroductionPageController from './introductionpage.controller';
+import IntroductionPageController from './introductionPage.controller';
 
 export default class IntroductionPage {
-    public template = require('./introductionpage.html');
+    public template = require('./introductionPage.html');
     public scope ={
         
     };

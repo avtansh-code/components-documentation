@@ -1,13 +1,13 @@
 
-import MainView from './main-view/mainView/mainview.directive';
+import MainView from './main-view/mainView/mainView.directive';
 import SideNavBar from './main-view/sidenavbar/sidenavbar.directive';
 import Toolbar from './main-view/toolbar/toolbar.directive';
-import ProgressButtonDemo from './demo/progressbutton/progressbuttondemo.directive';
-import FilevalidationlogDemo from './demo/filevalidationlog/filevalidationlogdemo.directive';
-import IntroductionPage from './introduction_page/introductionpage.directive';
-import GettingStarted from './getting_started/gettingstarted.directive';
-import ProgressButtonDescription from './directive_description/progressbutton/progressbuttondescription.directive';
-import FilevalidationlogDescription from './directive_description/filevalidationlog/filevalidationlogdescription.directive';
+import ProgressButtonDemo from './demo/progressButton/progressButtonDemo.directive';
+import FilevalidationlogDemo from './demo/fileValidationLog/fileValidationLogDemo.directive';
+import IntroductionPage from './introduction_page/introductionPage.directive';
+import GettingStarted from './getting_started/gettingStarted.directive';
+import ProgressButtonDescription from './directive_description/progressButton/progressButtonDescription.directive';
+import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
 
 export default function registerAppDirective(AppName: string): void {
 
