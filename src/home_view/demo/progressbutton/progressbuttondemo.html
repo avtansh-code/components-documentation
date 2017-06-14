@@ -1,0 +1,35 @@
+
+<div layout="row" layout-align="space-around" class="md-padding">
+            <!--<progress-button state="stateObject[state]" icon="{{icons[iconNo]}}" disabledstate="{{isDisabled}}" ng-click="toProgressState()"></progress-button>-->
+        </div>
+        <div layout="row" layout-align="space-around">
+            <div layout="column" layout-align="start ">
+                <b>State</b>
+                <br>
+                <md-radio-group ng-model="vm.state">
+                    <md-radio-button value=0 >Initial</md-radio-button>
+                    <md-radio-button value=1 > Done </md-radio-button>
+                    <md-radio-button value=2 >Error</md-radio-button>
+                    <md-radio-button value=3 >In progress</md-radio-button>
+                </md-radio-group>
+            </div>
+
+            <div layout="column" layout-align="start">
+                <b>Disabled</b>
+                <br>
+                <md-checkbox ng-model="vm.isDisabled">
+                    Disabled
+                </md-checkbox>
+            </div>
+
+            <div layout="column" layout-align="start ">
+                <b>icon</b>
+                <br>
+                <md-radio-group ng-model="vm.iconNo">
+                    <md-radio-button value=0 >publish</md-radio-button>
+                    <md-radio-button value=1 >check_circle</md-radio-button>
+                    <md-radio-button value=2 >error</md-radio-button>
+                    <md-radio-button value=3 >file_upload</md-radio-button>
+                </md-radio-group>
+            </div>
+        </div>
