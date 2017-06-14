@@ -1,36 +1,34 @@
 
 <md-sidenav
     class="md-sidenav-left" style="height: 100vh;background-color: #106CC8;
-    background: -webkit-linear-gradient(#185694, #106cc8);
-    background: linear-gradient(#185694, #106cc8);
     border-bottom: 1px solid #267ED5;
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
-    z-index: 2;"
+    z-index: 2;
+    color:white;"
     md-component-id="left"
     md-is-locked-open="$mdMedia('gt-sm')"
     tabindex="-1"
     md-whiteframe="4">
-    <md-toolbar  style="height: 20%;width: 100%;padding:5%;position:relative;z-index:10">Reusable Front-end Component</md-toolbar>
+    <md-toolbar  style="height: 20%;width: 100%;padding:5%;position:relative;z-index:10;color:white;" ng-click="vm.changeState(0)">Reusable Front-end Component</md-toolbar>
     
-<hr style="margin:0px">
-    <uib-accordion close-others="true" style="position:relative;z-index: 2;border:0px;">
+    <hr style="margin:0px">
+    <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(1)">Getting Started</md-button>
     
-    <!--<div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">
-      {{group.content}}
-    </div>-->
-    
-    <div uib-accordion-group class="panel-default" is-open="status.isCustomHeaderOpen" style="position:relative;z-index: 2;border:0px;margin:0px;border-radius:0px">
+    <uib-accordion close-others="true" style="position:relative;z-index: 2;border:0px;color:white;">
+    <div uib-accordion-group class="panel-default accordionHeadingStyle" is-open="status.isCustomHeaderOpen" style="position:relative;z-index: 2;border:0px;margin:0px;border-radius:0px;background:  #106cc8;color:white;">
       <uib-accordion-heading>
         Demos <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isCustomHeaderOpen, 'glyphicon-chevron-right': !status.isCustomHeaderOpen}"></i>
       </uib-accordion-heading>
-      Progress-button
+      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(2)">Progress-Button</md-button>
+      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(3)">File Validation Log</md-button>
     </div>
-    <div uib-accordion-group class="panel-default" is-open="status.open" style="position:relative;z-index: 2;border:0px;margin:0px;border-radius:0px">
+    <div uib-accordion-group class="panel-default accordionHeadingStyle" is-open="status.open" style="position:relative;z-index: 2;border:0px;margin:0px;border-radius:0px;background:  #106cc8;color:white;">
       <uib-accordion-heading>
        Directive<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
       </uib-accordion-heading>
-      This is just some content to illustrate fancy headings.
+      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(4)">progress-button</md-button>
+      <md-button style="width:100%;text-align:left;padding-left:5%;margin-left:0px;" ng-click="vm.changeState(5)">file-tabs</md-button>
     </div>
   </uib-accordion>
 </md-sidenav>
