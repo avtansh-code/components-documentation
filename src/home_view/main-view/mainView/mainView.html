@@ -1,11 +1,11 @@
 
-<div>
-  <div layout="row" flex >
+<div class="dimensions">
+  <div layout="row" class="dimensions" >
     <sidenavbar></sidenavbar>
-    <div layout="column" tabindex="-1" role="main" flex class="layout-column flex">
+    <div layout="column" tabindex="-1" role="main" flex class="layout-column flex dimensions" >
       <toolbar></toolbar>
-      <md-content md-scroll-y="" layout="column" flex class="_md layout-column flex">
-        <div ui-view></div>
+      <md-content  layout="column" class="dimensions">
+        <div ui-view class="dimensions {{vm.style['scrollView']}}" ></div>
       </md-content>
     </div>
     
