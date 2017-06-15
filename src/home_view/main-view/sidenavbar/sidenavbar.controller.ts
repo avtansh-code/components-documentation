@@ -1,15 +1,8 @@
 
-import Inject from "../../../utils/di"
+import Inject from "../../../utils/di";
+import {STATES} from "../../constants";
 export default class SideNavBarController {
   private style = require('./sidenavbar.css');
-  private states = [
-    'main.introductionPage',
-    'main.gettingStarted',
-    'main.progressbuttonDemo',
-    'main.filevalidationlogDemo',
-    'main.progressButton',
-    'main.fileTabs'
-  ];
 
   constructor(@Inject('$state') private $state: any) {
     
@@ -22,7 +15,7 @@ export default class SideNavBarController {
    * changes state according to id
    */
   public changeState(id: number): void {
-    this.$state.go(this.states[id]);
+    this.$state.go(STATES[id]);
   }
 
 
