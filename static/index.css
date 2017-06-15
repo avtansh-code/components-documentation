@@ -24,4 +24,41 @@
 
 code {
     color: rgb(63,81,181);
+    background: rgba(0, 0, 0, 0.065)
+}
+
+.apiProfileHeader > h2 {
+    color: #164371;
+    margin: 0px;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.010em;
+    line-height: 1.6em;
+    margin: 0.8em 0 1.6em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #D1DEEC;
+}
+
+tr:nth-child(odd){
+    background-color: #E3ECF5;
+}
+
+th {
+    background-color: #106CC8;
+    color: white;
 }
