@@ -12,6 +12,8 @@
     "url": "git+https://aashish347@bitbucket.org/elucidatainc/components-documentation.git"
   },
   "dependencies": {
+    "@eluci/filevalidationlogs": "^1.5.0",
+    "@eluci/progress-button": "^1.1.3",
     "angular": "^1.6.4",
     "angular-animate": "^1.6.4",
     "angular-aria": "^1.6.4",
