@@ -1,0 +1,10 @@
+
+.cardStyle {
+    margin: 40px;
+    border-radius: 3px;
+}
+
+.curvedToolbarBorder {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
