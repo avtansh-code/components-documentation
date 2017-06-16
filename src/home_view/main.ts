@@ -36,7 +36,7 @@ angular
                 template: '<filevalidationlog-demo />'
             })
             .state('main.progressButton', {
-                url: "/directive/progress-button",
+                url: "/directive/progressButton",
                 template: '<progress-button-directive />'
             })
             .state('main.fileTabs', {
