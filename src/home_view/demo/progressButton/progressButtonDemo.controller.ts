@@ -4,7 +4,7 @@ export default class ProgressButtonDemoController {
 
   private style = require('./progressButtonDemo.css');
   private icons: string[] = ['publish','check_circle','error','file_upload'];
-  private isDisabled = false;
+  private isDisabled = true;
   private state: number = 0;
   private iconNo: number = 0;
   

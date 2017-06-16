@@ -19,3 +19,35 @@ export const ERROR_STATE_OBJECT = {
     'text': 'error',
     'color': '#d9534f'
 };
+export const STATES = [
+    'main.introductionPage',
+    'main.gettingStarted',
+    'main.progressbuttonDemo',
+    'main.filevalidationlogDemo',
+    'main.progressButton',
+    'main.fileTabs'
+];
+export const TOOLBAR_STATES =[
+    [
+        'Introduction'
+    ],
+    [
+        'Getting Started'
+    ],
+    [
+        'Demo',
+        'Progress Button'
+    ],
+    [
+        'Demo',
+        'file Validation Logs'
+    ],
+    [
+        'Directive',
+        'progress-button'
+    ],
+    [
+        'Directive',
+        'file-tabs'
+    ],
+]

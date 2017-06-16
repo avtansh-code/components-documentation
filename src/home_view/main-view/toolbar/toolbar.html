@@ -1,7 +1,10 @@
 <md-toolbar class="md-whiteframe-glow-z1 _md-toolbar-transitions {{vm.style['toolbarStyle']}}">
 
     <div class="md-toolbar-tools " tabindex="-1">
-        <span>Demo</span>
+        <div ng-repeat="state in vm.toolbarHeading track by $index">
+            <span>{{state}}</span>
+            <i ng-if="$index < vm.toolbarHeading.length-1" class="glyphicon glyphicon-chevron-right {{vm.style['iconStyle']}}"></i>
+        </div>
     </div>
 
 </md-toolbar>

@@ -5,8 +5,9 @@ export const AppName: string = 'home.view';
 const angular = require('angular');
 const uibootstrap = require('angular-ui-bootstrap');
 const uiRouter = require('angular-ui-router');
+const progressbutton = require('@eluci/progress-button');
 
-const App = angular.module(AppName, ['ngMaterial', uibootstrap, uiRouter]);
+const App = angular.module(AppName, ['ngMaterial','ngMdIcons', uibootstrap, uiRouter, progressbutton]);
 
 angular
     .module(AppName)

@@ -1,5 +1,124 @@
 
 <div class="md-padding">
-   <h1>pb</h1>
-   <p>description</p>     
+    <header class="apiProfileHeader">
+        <h2 class="md-display-1">progressButton API Documentation</h1>
+    </header>
+    <div>
+        <p>
+            <code><<span>progress-button</span>></code> is a button with different states like initial, inprogress, done and error. 
+        </p>
+        <p>
+            you can easily specify color, text, icon for the button.
+        </p>
+        
+            <p>
+                To start you would need to specify the state object. In state object, you can specify the state along with its color and text to be displayed for button. you can pass a json object like
+                <pre>
+stateObject = {
+    'value': 'initial',
+    'text': 'upload', 
+    'color': '#337ab7'
+}
+</pre>
+            </p>
+            <h3>Usage</h3>
+            <div>
+                <h4>Basic Example</h4>
+            <md-card class="{{vm.style['cardStyle']}}">
+                <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
+                    <div class="md-toolbar-tools ">
+                        <h3>html</h3>
+                    </div>
+                </md-toolbar>
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>progress-button</span> state="stateObject" icon="publish" disabledstate="false" ></progress-button>
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+    
+        <div>
+            <br>
+            <h4>Example with interpolation</h4>
+            <p>
+                you can also use interpolation for setting icon and disabledstate attribute using variables like -
+                <pre>
+icon_name = "error"
+isDisabled = false
+</pre>
+            </p>
+            <md-card class="{{vm.style['cardStyle']}}">
+                <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
+                    <div class="md-toolbar-tools ">
+                        <h3>html</h3>
+                    </div>
+                </md-toolbar>
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>progress-button state="stateObject" icon='{{</span><span>icon_name}}'' disabledstate="{{</span>isDisabled}}" ></progress-button>
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+    <div>
+        <h3>Attributes</h3>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>state</b>
+                            </td>
+                        <td>
+                            <code>Json object</code>
+                            </td>
+                        <td> 
+                            <p> model to define state of the button with text to be displayed and its background color.
+                                It contains key/value pairs.It contains following keys -
+                                <ul >
+                                    <li>value  </li>
+                                    <li>text  &nbsp &nbsp &nbsp<code>optional</code></li>
+                                    <li>color  &nbsp &nbsp<code>optional</code></li>
+                                </ul>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>disabledstate</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                            </td>
+                        <td> 
+                            <p>Determines whether or not to disable the progress-button</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>icon</b>
+                        </td>
+                        <td>
+                            <code>string</code>
+                        </td>
+                        <td> 
+                            <p>
+                                String name of icon for initial state. icons should be from 
+                                <a href="https://klarsys.github.io/angular-material-icons/">angular-material-icons</a> only
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>     
 </div>
