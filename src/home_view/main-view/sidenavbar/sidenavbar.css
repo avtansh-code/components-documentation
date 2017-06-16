@@ -84,3 +84,8 @@
 .uppercaseTextStyle {
     text-transform: uppercase;
 }
+
+.subHeadingStyle {
+    margin: 0px;
+    font-size: 16px;
+}
