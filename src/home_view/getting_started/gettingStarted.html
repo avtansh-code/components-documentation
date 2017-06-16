@@ -1,5 +1,39 @@
+<div class="md-padding">
+    <h2>How To Start ?</h3>
+    <p>
+        Include Angular Js Material and Bootstrap Library in your project either through CDN links or npm.
+        You can see the available packages list at private npm registry, <a href="http://54.245.179.143:81/">here</a>
+    </p>
+    <h3>Installing Reusable Components</h3>
+    <p>
+        You can install the components in your local project using npm
+    </p>
+    <div class="{{vm.style['innerContentStyle']}}">
+        First,Go to root directory of your project and update npmrc config file.
+        Open npmrc file: <code>vim ~/.npmrc</code>
+        <div >Add following lines to npmrc file for setting private and default npm registry
+            <ul >
+                <li>registry=http://registry.npmjs.org/</li>
+                <li>@eluci:registry=http://54.245.179.143:81/</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="{{vm.style['innerContentStyle']}}">
+        Then install it
+        <ul >
+            <li>npm install @eluci/< component-package-name > --save</li>
+            <li>require('@eluci/< component-package-name >') from your code and add as a dependency for your app.</li>
+            <br>
+            <pre>
+ const component = require('@eluci/< component-package-name >');
 
-<div layout="row" class="md-padding">
-       <h2>getting started</h2>
-       <p>rfc </p>
+ angular.module('myModule',[component]);                   
+</pre>
+        </ul>
+    </div>
+    <blockquote>
+        Note:- The package might also have required css files. So, in such cases you can use a css loader in your project, if not already used.
+        you can also see <a href="https://github.com/cheton/browserify-css"> browserify-css </a>
+    </blockquote>
 </div>

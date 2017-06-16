@@ -1,5 +1,4 @@
-.sidenavToolbar{
-    height: 20%;
+.sidenavHeader{
     width: 100%;
     padding: 5%;
     position: relative;
@@ -10,7 +9,9 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    font-size: 20px;
+    font-size: 24px;
+    background-color: #106CC8 !important;
+    border-bottom: 2px solid #267ED5 !important;
 }
 
 .sidenavbarStyle {
@@ -29,6 +30,22 @@
     padding-left: 5%;
     margin-left: 0px;
     margin-right: 0px;
+    border-bottom: 1px solid #267ED5;
+    text-transform: unset;
+}
+
+.itemHeadingStyle {
+    width: 100%;
+    min-height: 36px;
+    text-align: left;
+    padding-left: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+    color:  rgba(255, 255, 255, 0.54) !important;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px !important;
+    margin-top: 6px;
 }
 
 .accordionStyle {
@@ -45,9 +62,25 @@
     margin: 0px;
     border-radius: 0px;
     background:  #106cc8;
+    border-bottom: 1px solid #267ED5;
     color: white;
 }
 
-.hrStyle {
-    margin: 0px;
+.logoStyle {
+    display: block;
+    height: 70px;
+}
+
+.bottomMargin {
+    margin-bottom: 8px;
+}
+
+.sidenavContentStyle {
+    height:100%;
+    max-height: 100%;
+    overflow-y: scroll
+}
+
+.uppercaseTextStyle {
+    text-transform: uppercase;
 }
