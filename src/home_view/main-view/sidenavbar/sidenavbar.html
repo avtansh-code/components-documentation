@@ -5,25 +5,35 @@
     md-is-locked-open="$mdMedia('gt-sm')"
     tabindex="-1"
     md-whiteframe="4">
-    <md-toolbar  class="{{vm.style['sidenavToolbar']}}" ng-click="vm.changeState(0)">Reusable Front-end Component</md-toolbar>
-    
-    <hr class="{{vm.style['hrStyle']}}">
-    <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(1)">Getting Started</md-button>
-    
-    <uib-accordion close-others="true" class="{{vm.style['accordionStyle']}}">
-    <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.isCustomHeaderOpen" >
-      <uib-accordion-heading>
-        Demos <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isCustomHeaderOpen, 'glyphicon-chevron-right': !status.isCustomHeaderOpen}"></i>
-      </uib-accordion-heading>
-      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(2)">Progress-Button</md-button>
-      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(3)">File Validation Log</md-button>
+    <div layout="column" flex>
+      <header  class="{{vm.style['sidenavHeader']}}" ng-click="vm.changeState(0)">
+        <center>
+          <img src="/assets/images/logo.png" alt="Elucidata_Logo" class="{{vm.style['logoStyle']}}"></img>
+          
+          Reusable  
+          <div class="{{vm.style['bottomMargin']}}">Front-end Component</div>
+        </center>
+      </header>
+      <div class="{{vm.style['sidenavContentStyle']}}">
+          <md-button class="{{vm.style['uppercaseTextStyle']}} {{vm.style['itemStyle']}} " ng-click="vm.changeState(1)">Getting Started</md-button>
+          
+          <uib-accordion close-others="true" class="{{vm.style['accordionStyle']}}">
+            <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.isCustomHeaderOpen" >
+              <uib-accordion-heading>
+                Demos <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isCustomHeaderOpen, 'glyphicon-chevron-right': !status.isCustomHeaderOpen}"></i>
+              </uib-accordion-heading>
+              <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(2)">Progress-Button</md-button>
+              <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(3)">File Validation Log</md-button>
+            </div>
+            <div class="{{vm.style['itemHeadingStyle']}}">API Reference</div>
+            <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.open" >
+              <uib-accordion-heading>
+              Directive<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              </uib-accordion-heading>
+              <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(4)">progress-button</md-button>
+              <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(5)">file-tabs</md-button>
+            </div>
+          </uib-accordion>
+      </div>
     </div>
-    <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.open" >
-      <uib-accordion-heading>
-       Directive<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-      </uib-accordion-heading>
-      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(4)">progress-button</md-button>
-      <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(5)">file-tabs</md-button>
-    </div>
-  </uib-accordion>
 </md-sidenav>
