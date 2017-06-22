@@ -8,7 +8,8 @@ import IntroductionPage from './introduction_page/introductionPage.directive';
 import GettingStarted from './getting_started/gettingStarted.directive';
 import ProgressButtonDescription from './directive_description/progressButton/progressButtonDescription.directive';
 import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
-import SearchSelectDropdown from './demo/searchSelectDropdown/searchSelectDropdownDemo.directive';
+import SearchSelectDropdownDemo from './demo/searchSelectDropdown/searchSelectDropdownDemo.directive';
+import SearchSelectDropdownDescription from './directive_description/searchSelectDropdown/searchSelectDropdownDescription.directive';
 
 export default function registerAppDirective(AppName: string): void {
 
@@ -25,6 +26,7 @@ export default function registerAppDirective(AppName: string): void {
         .directive('filevalidationlogDemo',FilevalidationlogDemo.Factory())
         .directive('progressButtonDirective',ProgressButtonDescription.Factory())
         .directive('fileTabsDirective',FilevalidationlogDescription.Factory())
-        .directive('searchSelectDropdownDemo',SearchSelectDropdown.Factory())
+        .directive('searchSelectDropdownDemo',SearchSelectDropdownDemo.Factory())
+        .directive('searchSelectDropdownDirective',SearchSelectDropdownDescription.Factory())
 
 }
