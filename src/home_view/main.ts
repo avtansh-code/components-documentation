@@ -42,7 +42,11 @@ angular
             .state('main.fileTabs', {
                 url: "/directive/fileTabs",
                 template: '<file-tabs-directive />'
-            })  
+            }) 
+            .state('main.searchSelectDropdownDemo', {
+                url: "/demo/searchSelectDropdown",
+                template: '<search-select-dropdown-demo />'
+            }) 
             $urlRouterProvider.otherwise('/main/introduction');
     });
 

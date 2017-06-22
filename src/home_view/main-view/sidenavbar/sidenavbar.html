@@ -8,7 +8,7 @@
     <div layout="column" flex>
       <header  class="{{vm.style['sidenavHeader']}}" ng-click="vm.changeState(0)">
         <center>
-          <img src="/assets/images/logo.png" alt="Elucidata_Logo" class="{{vm.style['logoStyle']}}"></img>
+          <img src="/assets/images/logo.png" alt="Elucidata_Logo" class="{{vm.style['logoStyle']}}" style="color:white;fill:white"></img>
           
           Reusable  
           <div class="{{vm.style['bottomMargin']}}">Front-end Components</div>
@@ -24,6 +24,7 @@
               </uib-accordion-heading>
               <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(2)">Progress-Button</md-button>
               <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(3)">File Validation Log</md-button>
+              <md-button class="{{vm.style['itemStyle']}}" ng-click="vm.changeState(6)">Search Select Dropdown</md-button>
             </div>
             <div class="{{vm.style['itemHeadingStyle']}}">API Reference</div>
             <div uib-accordion-group class="panel-default accordionHeadingStyle {{vm.style['accordionGroupStyle']}}" is-open="status.open" >
