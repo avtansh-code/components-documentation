@@ -46,7 +46,11 @@ angular
             .state('main.searchSelectDropdownDemo', {
                 url: "/demo/searchSelectDropdown",
                 template: '<search-select-dropdown-demo />'
-            }) 
+            })
+            .state('main.searchSelectDropdown', {
+                url: "/directive/searchSelectDropdown",
+                template: '<search-select-dropdown-directive />'
+            })  
             $urlRouterProvider.otherwise('/main/introduction');
     });
 
