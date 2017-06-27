@@ -14,8 +14,8 @@ export default class SearchSelectDropdownDemoController {
   private dataSecondAccordion: IfcAccordionContent[] = [];
   private dataThirdAccordion: IfcAccordionContent[] = [];
   constructor() {
-    for (let i = 0; i < 1000; i++) {
-      let content: string = 'point ' + i;
+    for (let pointNo = 0; pointNo < 1000; pointNo++) {
+      let content: string = 'point ' + pointNo;
       let tempFirstData = {
         content: content,
         selected: false
