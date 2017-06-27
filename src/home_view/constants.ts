@@ -25,7 +25,9 @@ export const STATES = [
     'main.progressbuttonDemo',
     'main.filevalidationlogDemo',
     'main.progressButton',
-    'main.fileTabs'
+    'main.fileTabs',
+    'main.searchSelectDropdownDemo',
+    'main.searchSelectDropdown'
 ];
 export const TOOLBAR_STATES =[
     [
@@ -49,6 +51,14 @@ export const TOOLBAR_STATES =[
     [
         'Directive',
         'file-tabs'
+    ],
+    [
+        'Demo',
+        'Search Select Dropdown'
+    ],
+    [
+        'Directive',
+        'search-select-dropdown'
     ],
 ];
 

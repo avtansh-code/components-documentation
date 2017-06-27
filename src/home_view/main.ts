@@ -7,8 +7,9 @@ const uibootstrap = require('angular-ui-bootstrap');
 const uiRouter = require('angular-ui-router');
 const progressbutton = require('@eluci/progress-button');
 const filevalidationlog = require('@eluci/filevalidationlogs');
+const searchSelectDropdown = require('@eluci/search-select-dropdown');
 
-const App = angular.module(AppName, ['ngMaterial','ngMdIcons', uibootstrap, uiRouter, progressbutton, filevalidationlog]);
+const App = angular.module(AppName, ['ngMaterial','ngMdIcons', uibootstrap, uiRouter, progressbutton, filevalidationlog, searchSelectDropdown]);
 
 angular
     .module(AppName)
@@ -42,6 +43,14 @@ angular
             .state('main.fileTabs', {
                 url: "/directive/fileTabs",
                 template: '<file-tabs-directive />'
+            }) 
+            .state('main.searchSelectDropdownDemo', {
+                url: "/demo/searchSelectDropdown",
+                template: '<search-select-dropdown-demo />'
+            })
+            .state('main.searchSelectDropdown', {
+                url: "/directive/searchSelectDropdown",
+                template: '<search-select-dropdown-directive />'
             })  
             $urlRouterProvider.otherwise('/main/introduction');
     });

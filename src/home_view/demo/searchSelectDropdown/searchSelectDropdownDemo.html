@@ -1,0 +1,43 @@
+<md-card class="{{vm.style['cardStyle']}}">
+    <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
+        <div class="md-toolbar-tools ">
+            <h3>Basic Usage</h3>
+        </div>
+    </md-toolbar>
+    <md-card-content class="md-padding">
+        <p>
+            You can use search select dropdown for displaying 'n' number of child-accordion with search and select child-accordions data feature.
+        </p>
+    </md-card-content>
+    <div layout="row" layout-align="start" flex class="md-padding">
+        <search-select-dropdown flex="100" heading="{{vm.heading}}" no-of-item='4' icon-color="#00f" 
+            heading-color="#00f" accordion-data="vm.accordionData" open="vm.open" 
+            is-disabled="vm.isDisabled" open-one-at-a-time="{{vm.openOneAtATime}}">
+        </search-select-dropdown>
+    </div>
+    <div layout="row" layout-align="space-around">
+        <div layout="column" layout-align="start">
+            <b>Disabled</b>
+            <br>
+            <md-checkbox class="md-primary" ng-model="vm.isDisabled">
+                Disabled
+            </md-checkbox>
+        </div>
+
+        <div layout="column" layout-align="start">
+            <b>Open One Accordion at a time</b>
+            <br>
+            <md-checkbox class="md-primary" ng-model="vm.openOneAtATime">
+                openOneAtATime
+            </md-checkbox>
+        </div>
+
+        <div layout="column" layout-align="start ">
+            <b>Heading</b>
+            
+            <md-input-container class="md-primary" md-no-float class="md-block" flex="100">
+                <input aria-label="heading" ng-model="vm.heading" type="text">
+            </md-input-container>
+        </div>
+    </div>
+</md-card>

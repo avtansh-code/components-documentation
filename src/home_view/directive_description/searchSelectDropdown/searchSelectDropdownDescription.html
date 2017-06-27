@@ -1,0 +1,189 @@
+
+<div class="md-padding">
+    <header class="apiProfileHeader">
+        <h2 class="md-display-1">searchSelectDropdown API Documentation</h1>
+    </header>
+    <div>
+        <p>
+            <code><<span>search-select-dropdown</span>></code> 
+            is a component which can contain 'n' number of child-accordion with 
+            search and select child-accordions data feature.
+        </p>
+        <p>
+            To start you would need to specify the accordion-data attribute. <br>
+            It is an array of objects.Each object represents one  child accordion.Following is a sample data
+                <pre>
+accordion-data = [
+      {
+        heading: 'Accordion 1',
+        selected: false,
+        open: true,
+        isDisabled: false,
+        color: '#00f',
+        data: [
+        	{
+              content: 'item 1',
+              selected: false
+            }
+        ]
+      },
+      {
+        heading: 'Accordion 2',
+        selected: false,
+        open: false,
+        isDisabled: false,
+        color: '#00f',
+        data: [
+        	{
+              content: 'item 1',
+              selected: false
+            }
+        ]
+      },
+  ]
+
+</pre>
+
+        </p>
+        
+            <h3>Usage</h3>
+            
+            <div>
+                <h4>Basic Example</h4>
+            <md-card class="{{vm.style['cardStyle']}}">
+                <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
+                    <div class="md-toolbar-tools ">
+                        <h3>html</h3>
+                    </div>
+                </md-toolbar>
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>search-select-dropdown<br> 
+                            &nbsp &nbsp &nbsp &nbsp heading="Search..." <br>
+                            &nbsp &nbsp &nbsp &nbsp no-of-item="4" <br>
+                            &nbsp &nbsp &nbsp &nbsp icon-color="#00f"<br> 
+                            &nbsp &nbsp &nbsp &nbsp heading-color="#00f" <br>
+                            &nbsp &nbsp &nbsp &nbsp accordion-data="accordionData" <br>
+                            &nbsp &nbsp &nbsp &nbsp open="isOpen" <br>
+                            &nbsp &nbsp &nbsp &nbsp is-disabled="isDisabled" <br>
+                            &nbsp &nbsp &nbsp &nbsp open-one-at-a-time="true"></span><br>
+<span><</span>/search-select-dropdown>
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+    
+        
+    </div>
+    <div>
+        <h3>Attributes</h3>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>heading</b>
+                            </td>
+                        <td>
+                            <code>string</code>
+                            </td>
+                        <td> 
+                            <p> Placeholder text for dropdown heading.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>accordion-data</b>
+                        </td>
+                        <td>
+                            <code>object[]</code>
+                            </td>
+                        <td> 
+                            <p>model to define the child accordion data. It is an array of json objects containing each accordion data.
+                                
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>open</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                        </td>
+                        <td> 
+                            <p>
+                                model to control open/close action of dropdown.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>open-one-at-a-time</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                            </td>
+                        <td> 
+                            <p>control whether expanding one child accordion will cause other child accordions to close</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>is-disabled</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                            </td>
+                        <td> 
+                            <p>determines whether to disable the dropdown or not 
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>heading-color</b>
+                        </td>
+                        <td>
+                            <code>string</code>
+                            </td>
+                        <td> 
+                            <p>text and background color for heading of dropdown. It should be defined in hex format</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>icon-color</b>
+                        </td>
+                        <td>
+                            <code>string</code>
+                            </td>
+                        <td> 
+                            <p>specifies search icon color</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>no-of-item</b>
+                        </td>
+                        <td>
+                            <code>number</code>
+                            </td>
+                        <td> 
+                            <p>control number of rows displayed in child accordions</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>     
+</div>

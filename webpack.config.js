@@ -37,7 +37,7 @@ module.exports = {
   postcss: postcssInit,
 
   devServer: {
-    port: 5000,
+    port: 8000,
     inline: true,
     // hot: true,
     quiet: true,
