@@ -5,28 +5,45 @@
     </header>
     <div>
         <p>
-            <code><<span>file-tabs</span>></code> is a component that is used for the display of errors, warnings and other such details about uploaded files that need to be shown to the user before they proceed further.
+            <code><<span>search-select-dropdown</span>></code> is a component which can contain 'n' number of child-accordion with search and select child-accordions data feature.
         </p>
         <p>
-            To start you would need to specify the data attribute. <br>
-            The file name is the key to an object. Each object will have arrays of the details that the users wishes to display. Here we are using only two details warnings and errors but the user can display summary as well. It will also be in the same manner.
-            
+            To start you would need to specify the accordion-data attribute. <br>
+            It is an array of objects.Each object represents one  child accordion.Following is a sample data
                 <pre>
-sample_data = {
-    "file 1": {
-        "errors": ["error1", "error2", "error3", "error4", "error5", "error6"],
-        "warnings": []
-    },
-    "file 2": {
-        "errors": ["error1", "error2", "error3", "error4"],
-        "warnings": ["warning1", "warning2", "warning3", "warning4"]
-    },
-}
+accordion-data = [
+      {
+        heading: 'Accordion 1',
+        selected: false,
+        open: true,
+        isDisabled: false,
+        color: '#00f',
+        data: [
+        	{
+              content: 'item 1',
+              selected: false
+            }
+        ]
+      },
+      {
+        heading: 'Accordion 2',
+        selected: false,
+        open: false,
+        isDisabled: false,
+        color: '#00f',
+        data: [
+        	{
+              content: 'item 1',
+              selected: false
+            }
+        ]
+      },
+  ]
+
 </pre>
+
         </p>
-        <blockquote>
-            Note:- All the objects in the JSON object should contain all the arrays. If the array does not have any entries associated to it for that particular file, then the list can be left empty, but it needs to be defined. For references please have a look at the above example.
-        </blockquote>
+        
             <h3>Usage</h3>
             
             <div>
@@ -39,7 +56,16 @@ sample_data = {
                 </md-toolbar>
                 <md-card-content class="md-padding">
                     <p>
-                        <<span>file-tabs</span> data = "sample_data" listcolors='{errors:"#EA4436",warnings:"#C57D00"}'  labelsize='1.9em' textsize='1em' download-icon="block"  page-size=5><span><</span>/file-tabs>
+                        <<span>search-select-dropdown<br> 
+                            &nbsp &nbsp &nbsp &nbsp heading="Search..." <br>
+                            &nbsp &nbsp &nbsp &nbsp no-of-item="4" <br>
+                            &nbsp &nbsp &nbsp &nbsp icon-color="#00f"<br> 
+                            &nbsp &nbsp &nbsp &nbsp heading-color="#00f" <br>
+                            &nbsp &nbsp &nbsp &nbsp accordion-data="accordionData" <br>
+                            &nbsp &nbsp &nbsp &nbsp open="isOpen" <br>
+                            &nbsp &nbsp &nbsp &nbsp is-disabled="isDisabled" <br>
+                            &nbsp &nbsp &nbsp &nbsp open-one-at-a-time="true"></span><br>
+<span><</span>/search-select-dropdown>
                     </p>
                 </md-card-content>
             </md-card>
@@ -61,76 +87,97 @@ sample_data = {
                 <tbody>
                     <tr>
                         <td>
-                            <b>data</b>
+                            <b>heading</b>
                             </td>
-                        <td>
-                            <code>object</code>
-                            </td>
-                        <td> 
-                            <p> model for file validation logs.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>listcolors</b>
-                        </td>
-                        <td>
-                            <code>object</code>
-                            </td>
-                        <td> 
-                            <p>color corresponding to each list in the given data
-                                The keys will be the same as the names of the arrays in each object of the json data and the colors need to be input in the hex/string format. Default value is black for all the accordions.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>labelsize</b>
-                        </td>
-                        <td>
-                            <code>number</code>
-                        </td>
-                        <td> 
-                            <p>
-                                the font size of the accordion label.It is defined like 20px.It will take values just like the font-size attribute of css.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>textsize</b>
-                        </td>
-                        <td>
-                            <code>number</code>
-                            </td>
-                        <td> 
-                            <p>font size of the body of each accordion.It is defined like 20px.It will take values just like the font-size attribute of css</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>download-icon</b>
-                        </td>
                         <td>
                             <code>string</code>
                             </td>
                         <td> 
-                            <p>Determines whether or not to show download-icon.Default is block.
-                                Options: – <code>block</code>, <code>none</code>. 
+                            <p> Placeholder text for dropdown heading.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>accordion-data</b>
+                        </td>
+                        <td>
+                            <code>object[]</code>
+                            </td>
+                        <td> 
+                            <p>model to define the child accordion data. It is an array of json objects containing each accordion data.
+                                
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>open</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                        </td>
+                        <td> 
+                            <p>
+                                model to control open/close action of dropdown.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>open-one-at-a-time</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                            </td>
+                        <td> 
+                            <p>control whether expanding one child accordion will cause other child accordions to close</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>is-disabled</b>
+                        </td>
+                        <td>
+                            <code>boolean</code>
+                            </td>
+                        <td> 
+                            <p>determines whether to disable the dropdown or not 
 
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <b>page-size</b>
+                            <b>heading-color</b>
+                        </td>
+                        <td>
+                            <code>string</code>
+                            </td>
+                        <td> 
+                            <p>text and background color for heading of dropdown. It should be defined in hex format</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>icon-color</b>
+                        </td>
+                        <td>
+                            <code>string</code>
+                            </td>
+                        <td> 
+                            <p>specifies search icon color</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>no-of-item</b>
                         </td>
                         <td>
                             <code>number</code>
                             </td>
                         <td> 
-                            <p>defines the number of items per page when applying pagination.Default is 20</p>
+                            <p>control number of rows displayed in child accordions</p>
                         </td>
                     </tr>
                 </tbody>
