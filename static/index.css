@@ -3,10 +3,6 @@
     text-decoration: none;
 }
 
-.panel-body {
-    padding: 0px;
-}
-
 .accordionHeadingStyle > .panel-heading {
     background:  #106cc8;
     color: white;
@@ -67,4 +63,8 @@ th {
 
 td > p {
     margin: 0px;
+}
+
+.accordionHeadingStyle div.panel-collapse>div.panel-body{
+    padding: 0px;
 }

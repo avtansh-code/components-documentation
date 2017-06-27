@@ -7,8 +7,9 @@ const uibootstrap = require('angular-ui-bootstrap');
 const uiRouter = require('angular-ui-router');
 const progressbutton = require('@eluci/progress-button');
 const filevalidationlog = require('@eluci/filevalidationlogs');
+const searchSelectDropdown = require('@eluci/search-select-dropdown');
 
-const App = angular.module(AppName, ['ngMaterial','ngMdIcons', uibootstrap, uiRouter, progressbutton, filevalidationlog]);
+const App = angular.module(AppName, ['ngMaterial','ngMdIcons', uibootstrap, uiRouter, progressbutton, filevalidationlog, searchSelectDropdown]);
 
 angular
     .module(AppName)
