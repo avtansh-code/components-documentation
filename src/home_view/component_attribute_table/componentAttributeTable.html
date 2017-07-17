@@ -1,0 +1,29 @@
+
+<div>
+    <h3>Attributes</h3>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="attribute in vm.attributes">
+                    <td>
+                        <b>{{attribute.parameter}}</b>
+                        </td>
+                    <td>
+                        <code>{{attribute.type}}</code>
+                        </td>
+                    <td> 
+                        <p ng-bind-html="attribute.description"></p>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>    
