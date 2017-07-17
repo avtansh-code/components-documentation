@@ -8,8 +8,8 @@ const uiRouter = require('angular-ui-router');
 const progressbutton = require('@eluci/progress-button');
 const filevalidationlog = require('@eluci/filevalidationlogs');
 const searchSelectDropdown = require('@eluci/search-select-dropdown');
-
-const App = angular.module(AppName, ['ngMaterial','ngMdIcons', uibootstrap, uiRouter, progressbutton, filevalidationlog, searchSelectDropdown]);
+const angularSanitize = require('angular-sanitize');
+const App = angular.module(AppName, ['ngMaterial','ngMdIcons', angularSanitize, uibootstrap, uiRouter, progressbutton, filevalidationlog, searchSelectDropdown]);
 
 angular
     .module(AppName)
