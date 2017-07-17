@@ -10,14 +10,14 @@
     line-height: normal;
     letter-spacing: normal;
     font-size: 24px;
-    background-color: #106CC8 !important;
-    border-bottom: 2px solid #267ED5 !important;
+    background-color: #8985DB !important;
+    border-bottom: 2px solid #7D79C8 !important;
 }
 
 .sidenavbarStyle {
     height: 100vh;
-    background-color: #106CC8;
-    border-bottom: 1px solid #267ED5;
+    background-color: #8985DB;
+    border-bottom: 1px solid #7D79C8;
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
     z-index: 2;
@@ -30,7 +30,7 @@
     padding-left: 5%;
     margin-left: 0px;
     margin-right: 0px;
-    border-bottom: 1px solid #267ED5;
+    border-bottom: 1px solid #7D79C8;
     text-transform: unset;
 }
 
@@ -61,8 +61,8 @@
     border: 0px;
     margin: 0px;
     border-radius: 0px;
-    background:  #106cc8;
-    border-bottom: 1px solid #267ED5;
+    background:  #8985DB;
+    border-bottom: 1px solid #7D79C8;
     color: white;
 }
 

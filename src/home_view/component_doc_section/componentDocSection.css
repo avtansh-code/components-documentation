@@ -7,4 +7,5 @@
 .curvedToolbarBorder {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    background: #8589DB !important;
 }
