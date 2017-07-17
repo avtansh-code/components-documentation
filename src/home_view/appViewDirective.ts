@@ -10,6 +10,7 @@ import ProgressButtonDescription from './directive_description/progressButton/pr
 import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
 import SearchSelectDropdownDemo from './demo/searchSelectDropdown/searchSelectDropdownDemo.directive';
 import SearchSelectDropdownDescription from './directive_description/searchSelectDropdown/searchSelectDropdownDescription.directive';
+import ComponentDocSection from './component_doc_section/componentDocSection.directive';
 
 export default function registerAppDirective(AppName: string): void {
 
@@ -28,5 +29,6 @@ export default function registerAppDirective(AppName: string): void {
         .directive('fileTabsDirective',FilevalidationlogDescription.Factory())
         .directive('searchSelectDropdownDemo',SearchSelectDropdownDemo.Factory())
         .directive('searchSelectDropdownDirective',SearchSelectDropdownDescription.Factory())
+        .directive('componentDocSection', ComponentDocSection.Factory())
 
 }
