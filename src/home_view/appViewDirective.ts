@@ -11,6 +11,7 @@ import FilevalidationlogDescription from './directive_description/fileValidation
 import SearchSelectDropdownDemo from './demo/searchSelectDropdown/searchSelectDropdownDemo.directive';
 import SearchSelectDropdownDescription from './directive_description/searchSelectDropdown/searchSelectDropdownDescription.directive';
 import ComponentDocSection from './component_doc_section/componentDocSection.directive';
+import ComponentAttributeTable from './component_attribute_table/componentAttributeTable.directive';
 
 export default function registerAppDirective(AppName: string): void {
 
@@ -30,5 +31,6 @@ export default function registerAppDirective(AppName: string): void {
         .directive('searchSelectDropdownDemo',SearchSelectDropdownDemo.Factory())
         .directive('searchSelectDropdownDirective',SearchSelectDropdownDescription.Factory())
         .directive('componentDocSection', ComponentDocSection.Factory())
+        .directive('componentAttributeTable', ComponentAttributeTable.Factory())
 
 }
