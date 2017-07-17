@@ -24,18 +24,13 @@ stateObject = {
             <h3>Usage</h3>
             <div>
                 <h4>Basic Example</h4>
-            <md-card class="{{vm.style['cardStyle']}}">
-                <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
-                    <div class="md-toolbar-tools ">
-                        <h3>html</h3>
-                    </div>
-                </md-toolbar>
-                <md-card-content class="md-padding">
-                    <p>
-                        <<span>progress-button</span> state="stateObject" icon="publish" disabledstate="false" ></progress-button>
-                    </p>
-                </md-card-content>
-            </md-card>
+                <component-doc-section title="html">
+                    <md-card-content class="md-padding">
+                        <p>
+                            <<span>progress-button</span> state="stateObject" icon="publish" disabledstate="false" ></progress-button>
+                        </p>
+                    </md-card-content>
+                </component-doc-section>
         </div>
     
         <div>
@@ -48,18 +43,13 @@ icon_name = "error"
 isDisabled = false
 </pre>
             </p>
-            <md-card class="{{vm.style['cardStyle']}}">
-                <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
-                    <div class="md-toolbar-tools ">
-                        <h3>html</h3>
-                    </div>
-                </md-toolbar>
+            <component-doc-section title="Basic Usage">
                 <md-card-content class="md-padding">
                     <p>
                         <<span>progress-button state="stateObject" icon='{{</span><span>icon_name}}'' disabledstate="{{</span>isDisabled}}" ></progress-button>
                     </p>
                 </md-card-content>
-            </md-card>
+            </component-doc-section>
         </div>
     </div>
     <div>
