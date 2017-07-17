@@ -12,3 +12,9 @@ export interface IfcAccordionContent {
     content: string;
     selected: boolean;
 }
+
+export interface IfcAttribute {
+    parameter: string;
+    type: string;
+    description: string;
+}
