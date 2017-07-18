@@ -3,7 +3,7 @@
 export const AppName: string = 'app';
 
 import {AppName as HomeCore} from './HomeCore/main';
-import {AppName as HomeView} from './home_view/main';
+import {AppName as HomeView} from './HomeView/main';
 
 const angular = require('angular');
 
