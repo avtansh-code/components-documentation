@@ -8,7 +8,9 @@ import IntroductionPage from './IntroductionPage/introductionPage.directive';
 import GettingStarted from './GettingStarted/GettingStarted/gettingStarted.directive';
 import GettingStartedAngular from './GettingStarted/GettingStartedAngular/gettingStartedAngular.directive';
 import GettingStartedAngularjs from './GettingStarted/GettingStartedAngularjs/gettingStartedAngularjs.directive';
-import ProgressButtonDescription from './directive_description/progressButton/progressButtonDescription.directive';
+import ProgressButtonDescription from './directive_description/ProgressButton/ProgressButton/progressButtonDescription.directive';
+import ProgressButtonDescriptionAngular from './directive_description/ProgressButton/ProgressButtonAngular/progressButtonDescriptionAngular.directive';
+import ProgressButtonDescriptionAngularjs from './directive_description/ProgressButton/ProgressButtonAngularjs/progressButtonDescriptionAngularjs.directive';
 import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
 import SearchSelectDropdownDemo from './Demo/SearchSelectDropdown/searchSelectDropdownDemo.directive';
 import SearchSelectDropdownDescription from './directive_description/searchSelectDropdown/searchSelectDropdownDescription.directive';
@@ -31,6 +33,8 @@ export default function registerAppDirective(AppName: string): void {
         .directive('gettingStartedAngular',GettingStartedAngular.Factory())
         .directive('filevalidationlogDemo',FilevalidationlogDemo.Factory())
         .directive('progressButtonDirective',ProgressButtonDescription.Factory())
+        .directive('progressButtonDirectiveAngular',ProgressButtonDescriptionAngular.Factory())
+        .directive('progressButtonDirectiveAngularjs',ProgressButtonDescriptionAngularjs.Factory())
         .directive('fileTabsDirective',FilevalidationlogDescription.Factory())
         .directive('searchSelectDropdownDemo',SearchSelectDropdownDemo.Factory())
         .directive('searchSelectDropdownDirective',SearchSelectDropdownDescription.Factory())

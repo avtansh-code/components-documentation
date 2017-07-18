@@ -1,9 +1,9 @@
 
-import {IfcAttribute} from '../../../dataType';
+import {IfcAttribute} from '../../../../dataType';
 
-export default class ProgressButtonDescriptionController {
+export default class ProgressButtonDescriptionAngularController {
     
-  private style = require('./progressButtonDescription.css');
+  private style = require('./progressButtonDescriptionAngular.css');
   private attribute: IfcAttribute[] =[
     {
       parameter: 'state',
@@ -26,8 +26,8 @@ export default class ProgressButtonDescriptionController {
       parameter: 'icon',
       type: 'string',
       description: `String name of icon for initial state. icons should be from 
-                      <a href="https://klarsys.github.io/angular-material-icons/">
-                      angular-material-icons</a> only
+                      <a href="https://material.io/icons/">
+                      material icons library</a> only
                     `
     }
   ];
