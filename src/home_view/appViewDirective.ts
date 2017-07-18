@@ -11,7 +11,9 @@ import GettingStartedAngularjs from './GettingStarted/GettingStartedAngularjs/ge
 import ProgressButtonDescription from './directive_description/ProgressButton/ProgressButton/progressButtonDescription.directive';
 import ProgressButtonDescriptionAngular from './directive_description/ProgressButton/ProgressButtonAngular/progressButtonDescriptionAngular.directive';
 import ProgressButtonDescriptionAngularjs from './directive_description/ProgressButton/ProgressButtonAngularjs/progressButtonDescriptionAngularjs.directive';
-import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
+import FilevalidationlogDescription from './directive_description/FileValidationLog/FileValidationLog/fileValidationLogDescription.directive';
+import FilevalidationlogDescriptionAngular from './directive_description/FileValidationLog/FileValidationLogAngular/fileValidationLogDescriptionAngular.directive';
+import FilevalidationlogDescriptionAngularjs from './directive_description/FileValidationLog/FileValidationLogAngularjs/fileValidationLogDescriptionAngularjs.directive';
 import SearchSelectDropdownDemo from './Demo/SearchSelectDropdown/searchSelectDropdownDemo.directive';
 import SearchSelectDropdownDescription from './directive_description/searchSelectDropdown/searchSelectDropdownDescription.directive';
 import ComponentDocSection from './ComponentDocSection/componentDocSection.directive';
@@ -36,6 +38,8 @@ export default function registerAppDirective(AppName: string): void {
         .directive('progressButtonDirectiveAngular',ProgressButtonDescriptionAngular.Factory())
         .directive('progressButtonDirectiveAngularjs',ProgressButtonDescriptionAngularjs.Factory())
         .directive('fileTabsDirective',FilevalidationlogDescription.Factory())
+        .directive('fileTabsDirectiveAngular',FilevalidationlogDescriptionAngular.Factory())
+        .directive('fileTabsDirectiveAngularjs',FilevalidationlogDescriptionAngularjs.Factory())
         .directive('searchSelectDropdownDemo',SearchSelectDropdownDemo.Factory())
         .directive('searchSelectDropdownDirective',SearchSelectDropdownDescription.Factory())
         .directive('componentDocSection', ComponentDocSection.Factory())

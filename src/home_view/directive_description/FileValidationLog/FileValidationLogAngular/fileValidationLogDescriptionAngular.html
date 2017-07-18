@@ -1,0 +1,73 @@
+<div class="md-padding">
+
+    <header class="apiProfileHeader">
+        <h2 class="md-display-1">fileTabs API Documentation</h1>
+    </header>
+    <p>
+        import <code>{FileValidationLogsModule}</code> from '@eluci/filevalidationlogs-ng2';
+    </p>
+
+    <div>
+        <p>
+            Include the following css files in your project
+            <pre>
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css</pre>
+            <blockquote>
+                You can either import these css files in your styles or include as stylesheet in main html file
+            </blockquote>
+        </p>
+    </div>
+
+    <div>
+        <h3>Directive</h3>
+        <div>
+            <p>
+                A component used for displaying errors, warnings and other such details about uploaded files that need to be shown to the
+                user before they proceed further.
+                <br>
+                <br> Selector: <code>file-tabs</code>
+                <br> Exported as: <code>FileTabs</code>
+            </p>
+        </div>
+        <p>
+            To start you would need to specify the data property. <br> The file name is the key to an object. Each object
+            will have arrays of the details that the users wishes to display. Here we are using only two details warnings
+            and errors but the user can display summary as well. It will also be in the same manner.
+
+            <pre>
+sample_data = {
+    "file 1": {
+        "errors": ["error1", "error2", "error3", "error4", "error5", "error6"],
+        "warnings": []
+    },
+    "file 2": {
+        "errors": ["error1", "error2", "error3", "error4"],
+        "warnings": ["warning1", "warning2", "warning3", "warning4"]
+    },
+}
+</pre>
+        </p>
+        <blockquote>
+            Note:- All the objects in the JSON object should contain all the arrays. If the array does not have any entries associated
+            to it for that particular file, then the list can be left empty, but it needs to be defined. For references please
+            have a look at the above example.
+        </blockquote>
+        <h3>Usage</h3>
+
+        <div>
+            <h4>Basic Example</h4>
+            <component-doc-section title="Basic Usage">
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>file-tabs</span> [data] = "data" [list-colors] = "listcolors" [label-size] = "'1.9em'" [text-size]
+                            = "'1em'" <br>[download-icon] = "'block'" [page-size] = "5" [title] = "'File Validation Logs'">
+                            <span><</span>/file-tabs>
+                    </p>
+                </md-card-content>
+            </component-doc-section>
+        </div>
+    </div>
+    <component-attribute-table attributes="vm.attribute"></component-attribute-table>
+
+</div>
