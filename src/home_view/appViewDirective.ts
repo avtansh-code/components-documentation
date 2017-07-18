@@ -1,19 +1,19 @@
 
-import MainView from './main-view/mainView/mainView.directive';
-import SideNavBar from './main-view/sidenavbar/sidenavbar.directive';
-import Toolbar from './main-view/toolbar/toolbar.directive';
-import ProgressButtonDemo from './demo/progressButton/progressButtonDemo.directive';
-import FilevalidationlogDemo from './demo/fileValidationLog/fileValidationLogDemo.directive';
-import IntroductionPage from './introduction_page/introductionPage.directive';
-import GettingStarted from './getting_started/getting_started/gettingStarted.directive';
-import GettingStartedAngular from './getting_started/getting_started_angular/gettingStartedAngular.directive';
-import GettingStartedAngularjs from './getting_started/getting_started_angularjs/gettingStartedAngularjs.directive';
+import MainView from './MainView/MainView/mainView.directive';
+import SideNavBar from './MainView/Sidenavbar/sidenavbar.directive';
+import Toolbar from './MainView/Toolbar/toolbar.directive';
+import ProgressButtonDemo from './Demo/ProgressButton/progressButtonDemo.directive';
+import FilevalidationlogDemo from './Demo/FileValidationLog/fileValidationLogDemo.directive';
+import IntroductionPage from './IntroductionPage/introductionPage.directive';
+import GettingStarted from './GettingStarted/GettingStarted/gettingStarted.directive';
+import GettingStartedAngular from './GettingStarted/GettingStartedAngular/gettingStartedAngular.directive';
+import GettingStartedAngularjs from './GettingStarted/GettingStartedAngularjs/gettingStartedAngularjs.directive';
 import ProgressButtonDescription from './directive_description/progressButton/progressButtonDescription.directive';
 import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
-import SearchSelectDropdownDemo from './demo/searchSelectDropdown/searchSelectDropdownDemo.directive';
+import SearchSelectDropdownDemo from './Demo/SearchSelectDropdown/searchSelectDropdownDemo.directive';
 import SearchSelectDropdownDescription from './directive_description/searchSelectDropdown/searchSelectDropdownDescription.directive';
-import ComponentDocSection from './component_doc_section/componentDocSection.directive';
-import ComponentAttributeTable from './component_attribute_table/componentAttributeTable.directive';
+import ComponentDocSection from './ComponentDocSection/componentDocSection.directive';
+import ComponentAttributeTable from './ComponentAttributeTable/componentAttributeTable.directive';
 
 export default function registerAppDirective(AppName: string): void {
 

@@ -2,7 +2,7 @@
 /// <reference path="../typings/index.d.ts" />
 export const AppName: string = 'app';
 
-import {AppName as HomeCore} from './home_core/main';
+import {AppName as HomeCore} from './HomeCore/main';
 import {AppName as HomeView} from './home_view/main';
 
 const angular = require('angular');
