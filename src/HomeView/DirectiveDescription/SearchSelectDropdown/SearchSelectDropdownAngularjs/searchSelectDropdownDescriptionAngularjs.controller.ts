@@ -1,9 +1,9 @@
 
-import {IfcAttribute} from '../../../dataType';
+import {IfcAttribute} from '../../../../dataType';
 
-export default class SearchSelectDropdownDescriptionController {
+export default class SearchSelectDropdownDescriptionAngularjsController {
     
-  private style = require('./searchSelectDropdownDescription.css');
+  private style = require('./searchSelectDropdownDescriptionAngularjs.css');
   private attribute: IfcAttribute[] =[
     {
       parameter: 'heading',

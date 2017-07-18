@@ -15,7 +15,9 @@ import FilevalidationlogDescription from './DirectiveDescription/FileValidationL
 import FilevalidationlogDescriptionAngular from './DirectiveDescription/FileValidationLog/FileValidationLogAngular/fileValidationLogDescriptionAngular.directive';
 import FilevalidationlogDescriptionAngularjs from './DirectiveDescription/FileValidationLog/FileValidationLogAngularjs/fileValidationLogDescriptionAngularjs.directive';
 import SearchSelectDropdownDemo from './Demo/SearchSelectDropdown/searchSelectDropdownDemo.directive';
-import SearchSelectDropdownDescription from './DirectiveDescription/SearchSelectDropdown/searchSelectDropdownDescription.directive';
+import SearchSelectDropdownDescription from './DirectiveDescription/SearchSelectDropdown/SearchSelectDropdown/searchSelectDropdownDescription.directive';
+import SearchSelectDropdownDescriptionAngularjs from './DirectiveDescription/SearchSelectDropdown/SearchSelectDropdownAngularjs/searchSelectDropdownDescriptionAngularjs.directive';
+import SearchSelectDropdownDescriptionAngular from './DirectiveDescription/SearchSelectDropdown/SearchSelectDropdownAngular/searchSelectDropdownDescriptionAngular.directive';
 import ComponentDocSection from './ComponentDocSection/componentDocSection.directive';
 import ComponentAttributeTable from './ComponentAttributeTable/componentAttributeTable.directive';
 
@@ -42,6 +44,8 @@ export default function registerAppDirective(AppName: string): void {
         .directive('fileTabsDirectiveAngularjs',FilevalidationlogDescriptionAngularjs.Factory())
         .directive('searchSelectDropdownDemo',SearchSelectDropdownDemo.Factory())
         .directive('searchSelectDropdownDirective',SearchSelectDropdownDescription.Factory())
+        .directive('searchSelectDropdownDirectiveAngularjs',SearchSelectDropdownDescriptionAngularjs.Factory())
+        .directive('searchSelectDropdownDirectiveAngular',SearchSelectDropdownDescriptionAngular.Factory())
         .directive('componentDocSection', ComponentDocSection.Factory())
         .directive('componentAttributeTable', ComponentAttributeTable.Factory())
 
