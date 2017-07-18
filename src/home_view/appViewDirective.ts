@@ -5,7 +5,9 @@ import Toolbar from './main-view/toolbar/toolbar.directive';
 import ProgressButtonDemo from './demo/progressButton/progressButtonDemo.directive';
 import FilevalidationlogDemo from './demo/fileValidationLog/fileValidationLogDemo.directive';
 import IntroductionPage from './introduction_page/introductionPage.directive';
-import GettingStarted from './getting_started/gettingStarted.directive';
+import GettingStarted from './getting_started/getting_started/gettingStarted.directive';
+import GettingStartedAngular from './getting_started/getting_started_angular/gettingStartedAngular.directive';
+import GettingStartedAngularjs from './getting_started/getting_started_angularjs/gettingStartedAngularjs.directive';
 import ProgressButtonDescription from './directive_description/progressButton/progressButtonDescription.directive';
 import FilevalidationlogDescription from './directive_description/fileValidationLog/fileValidationLogDescription.directive';
 import SearchSelectDropdownDemo from './demo/searchSelectDropdown/searchSelectDropdownDemo.directive';
@@ -25,6 +27,8 @@ export default function registerAppDirective(AppName: string): void {
         .directive('progressButtonDemo',ProgressButtonDemo.Factory())
         .directive('introductionPage',IntroductionPage.Factory())
         .directive('gettingStarted',GettingStarted.Factory())
+        .directive('gettingStartedAngularjs',GettingStartedAngularjs.Factory())
+        .directive('gettingStartedAngular',GettingStartedAngular.Factory())
         .directive('filevalidationlogDemo',FilevalidationlogDemo.Factory())
         .directive('progressButtonDirective',ProgressButtonDescription.Factory())
         .directive('fileTabsDirective',FilevalidationlogDescription.Factory())

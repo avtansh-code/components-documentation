@@ -1,0 +1,41 @@
+<div>
+    <h2>How To Start ?</h3>
+    <p>
+        Include Angular Material in your project npm.
+        You can see the available packages list at private npm registry, <a href="http://54.245.179.143:81/">here</a>
+    </p>
+    <h3>Installing Reusable Components</h3>
+    <p>
+        You can install the components in your local project using npm
+    </p>
+    <div class="{{vm.style['innerContentStyle']}}">
+        First,Go to root directory of your project and update npmrc config file.
+        Open npmrc file: <code>vim ~/.npmrc</code>
+        <div >Add following lines to npmrc file for setting private and default npm registry
+            <ul >
+                <li>registry=http://registry.npmjs.org/</li>
+                <li>@eluci:registry=http://54.245.179.143:81/</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="{{vm.style['innerContentStyle']}}">
+        Then install it
+        <ul >
+            <li>npm install @eluci/< component-package-name > --save</li>
+            <li>Import the NgModule for component you want to use:</li>
+            <br>
+            <pre>
+import {< module-name >} from '@eluci/< component-package-name >';
+
+@NgModule({
+  ...
+  imports: [< module-name >],
+  ...
+})
+export class AppModule { }                 
+</pre>
+        </ul>
+    </div>
+   
+</div>
