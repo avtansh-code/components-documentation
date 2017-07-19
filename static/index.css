@@ -4,7 +4,7 @@
 }
 
 .accordionHeadingStyle > .panel-heading {
-    background:  #106cc8;
+    background:  #8985DB;
     color: white;
 }
 
@@ -19,13 +19,29 @@
 }
 
 code {
-    color: rgb(63,81,181);
+    color: #7D79C8;
     background: rgba(0, 0, 0, 0.065)
 }
 
 .apiProfileHeader > h2 {
-    color: #164371;
+    color: #6461A0;
     margin: 0px;
+}
+
+a{
+    color: #6461A0;
+}
+
+a:visited{
+    color: #58558C;
+}
+
+a:hover{
+    color: #58558C;
+}
+
+a:active{
+    color: #58558C;
 }
 
 p {
@@ -57,7 +73,7 @@ tr:nth-child(odd){
 }
 
 th {
-    background-color: #106CC8;
+    background-color: #8985DB;
     color: white;
 }
 

@@ -50,13 +50,8 @@ accordion-data = [
             
             <div>
                 <h4>Basic Example</h4>
-            <md-card class="{{vm.style['cardStyle']}}">
-                <md-toolbar class="{{vm.style['curvedToolbarBorder']}}">
-                    <div class="md-toolbar-tools ">
-                        <h3>html</h3>
-                    </div>
-                </md-toolbar>
-                <md-card-content class="md-padding">
+                <component-doc-section title="html">
+                    <md-card-content class="md-padding">
                     <p>
                         <<span>search-select-dropdown<br> 
                             &nbsp &nbsp &nbsp &nbsp heading="Search..." <br>
@@ -69,121 +64,12 @@ accordion-data = [
                             &nbsp &nbsp &nbsp &nbsp open-one-at-a-time="true"></span><br>
 <span><</span>/search-select-dropdown>
                     </p>
-                </md-card-content>
-            </md-card>
-        </div>
+                    </md-card-content>
+                </component-doc-section>
+            </div>
     
         
     </div>
-    <div>
-        <h3>Attributes</h3>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Parameter</th>
-                        <th>Type</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <b>heading</b>
-                            </td>
-                        <td>
-                            <code>string</code>
-                            </td>
-                        <td> 
-                            <p> Placeholder text for dropdown heading.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>accordion-data</b>
-                        </td>
-                        <td>
-                            <code>object[]</code>
-                            </td>
-                        <td> 
-                            <p>model to define the child accordion data. It is an array of json objects containing each accordion data.
-                                
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>open</b>
-                        </td>
-                        <td>
-                            <code>boolean</code>
-                        </td>
-                        <td> 
-                            <p>
-                                model to control open/close action of dropdown.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>open-one-at-a-time</b>
-                        </td>
-                        <td>
-                            <code>boolean</code>
-                            </td>
-                        <td> 
-                            <p>control whether expanding one child accordion will cause other child accordions to close</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>is-disabled</b>
-                        </td>
-                        <td>
-                            <code>boolean</code>
-                            </td>
-                        <td> 
-                            <p>determines whether to disable the dropdown or not 
-
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>heading-color</b>
-                        </td>
-                        <td>
-                            <code>string</code>
-                            </td>
-                        <td> 
-                            <p>text and background color for heading of dropdown. It should be defined in hex format</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>icon-color</b>
-                        </td>
-                        <td>
-                            <code>string</code>
-                            </td>
-                        <td> 
-                            <p>specifies search icon color</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>no-of-item</b>
-                        </td>
-                        <td>
-                            <code>number</code>
-                            </td>
-                        <td> 
-                            <p>control number of rows displayed in child accordions</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>     
+    <component-attribute-table attributes="vm.attribute"></component-attribute-table>
+      
 </div>
