@@ -1,8 +1,8 @@
 
-import * as CONSTANTS from '../../constants';
-export default class ProgressButtonDemoController {
+import * as CONSTANTS from '../../../constants';
+export default class ProgressButtonDemoAngularController {
 
-  private style = require('./progressButtonDemo.css');
+  private style = require('./progressButtonDemoAngular.css');
   private icons: string[] = ['publish','check_circle','error','file_upload'];
   private isDisabled = true;
   private state: number = 0;

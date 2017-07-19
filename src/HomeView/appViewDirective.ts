@@ -2,7 +2,9 @@
 import MainView from './MainView/MainView/mainView.directive';
 import SideNavBar from './MainView/Sidenavbar/sidenavbar.directive';
 import Toolbar from './MainView/Toolbar/toolbar.directive';
-import ProgressButtonDemo from './Demo/ProgressButton/progressButtonDemo.directive';
+import ProgressButtonDemo from './Demo/ProgressButton/ProgressButton/progressButtonDemo.directive';
+import ProgressButtonDemoAngular from './Demo/ProgressButton/ProgressButtonAngular/progressButtonDemoAngular.directive';
+import ProgressButtonDemoAngularjs from './Demo/ProgressButton/ProgressButtonAngularjs/progressButtonDemoAngularjs.directive';
 import FilevalidationlogDemo from './Demo/FileValidationLog/fileValidationLogDemo.directive';
 import IntroductionPage from './IntroductionPage/introductionPage.directive';
 import GettingStarted from './GettingStarted/GettingStarted/gettingStarted.directive';
@@ -31,6 +33,8 @@ export default function registerAppDirective(AppName: string): void {
         .directive('sidenavbar',SideNavBar.Factory())
         .directive('toolbar',Toolbar.Factory())
         .directive('progressButtonDemo',ProgressButtonDemo.Factory())
+        .directive('progressButtonDemoAngular',ProgressButtonDemoAngular.Factory())
+        .directive('progressButtonDemoAngularjs',ProgressButtonDemoAngularjs.Factory())
         .directive('introductionPage',IntroductionPage.Factory())
         .directive('gettingStarted',GettingStarted.Factory())
         .directive('gettingStartedAngularjs',GettingStartedAngularjs.Factory())
