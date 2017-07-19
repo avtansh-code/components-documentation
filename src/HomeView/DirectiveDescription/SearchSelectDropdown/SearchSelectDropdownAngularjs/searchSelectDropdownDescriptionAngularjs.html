@@ -1,0 +1,75 @@
+
+<div>
+    <header class="apiProfileHeader">
+        <h2 class="md-display-1">searchSelectDropdown API Documentation</h1>
+    </header>
+    <div>
+        <p>
+            <code><<span>search-select-dropdown</span>></code> 
+            is a component which can contain 'n' number of child-accordion with 
+            search and select child-accordions data feature.
+        </p>
+        <p>
+            To start you would need to specify the accordion-data attribute. <br>
+            It is an array of objects.Each object represents one  child accordion.Following is a sample data
+                <pre>
+accordion-data = [
+      {
+        heading: 'Accordion 1',
+        selected: false,
+        open: true,
+        isDisabled: false,
+        color: '#00f',
+        data: [
+        	{
+              content: 'item 1',
+              selected: false
+            }
+        ]
+      },
+      {
+        heading: 'Accordion 2',
+        selected: false,
+        open: false,
+        isDisabled: false,
+        color: '#00f',
+        data: [
+        	{
+              content: 'item 1',
+              selected: false
+            }
+        ]
+      },
+  ]
+
+</pre>
+
+        </p>
+        
+            <h3>Usage</h3>
+            
+            <div>
+                <h4>Basic Example</h4>
+                <component-doc-section title="html">
+                    <md-card-content class="md-padding">
+                    <p>
+                        <<span>search-select-dropdown<br> 
+                            &nbsp &nbsp &nbsp &nbsp heading="Search..." <br>
+                            &nbsp &nbsp &nbsp &nbsp no-of-item="4" <br>
+                            &nbsp &nbsp &nbsp &nbsp icon-color="#00f"<br> 
+                            &nbsp &nbsp &nbsp &nbsp heading-color="#00f" <br>
+                            &nbsp &nbsp &nbsp &nbsp accordion-data="accordionData" <br>
+                            &nbsp &nbsp &nbsp &nbsp open="isOpen" <br>
+                            &nbsp &nbsp &nbsp &nbsp is-disabled="isDisabled" <br>
+                            &nbsp &nbsp &nbsp &nbsp open-one-at-a-time="true"></span><br>
+<span><</span>/search-select-dropdown>
+                    </p>
+                    </md-card-content>
+                </component-doc-section>
+            </div>
+    
+        
+    </div>
+    <component-attribute-table attributes="vm.attribute"></component-attribute-table>
+      
+</div>

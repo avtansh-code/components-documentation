@@ -1,0 +1,48 @@
+<div >
+    <header class="apiProfileHeader">
+        <h2 class="md-display-1">progressButton API Documentation</h1>
+    </header>
+    <p>
+        import <code>{ProgressButtonModule}</code> from '@eluci/progressbutton-ng2';
+    </p>
+
+    <div>
+        <h3>Directive</h3>
+        <div>
+            <p>
+                Button with different states like initial, inprogress, done and error.
+                <br>
+                <br> Selector: <code>progress-button</code>
+                <br> Exported as: <code>ProgressButtonComponent</code>
+            </p>
+        </div>
+
+        <p>
+            you can easily specify color, text, icon for the button.
+        </p>
+
+        <p>
+            To start you would need to specify the state object. In state object, you can specify the state along with its color and
+            text to be displayed for button. you can pass a json object like
+            <pre>
+stateObject = {
+    'value': 'initial',
+    'text': 'upload', 
+    'color': '#337ab7'
+}
+</pre>
+        </p>
+        <h3>Usage</h3>
+        <div>
+            <h4>Basic Example</h4>
+            <component-doc-section title="html">
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>progress-button</span> [state]="stateObject" [disabledstate]="false" icon="publish" ></progress-button>
+                    </p>
+                </md-card-content>
+            </component-doc-section>
+        </div>
+    </div>
+    <component-attribute-table attributes="vm.attribute"></component-attribute-table>
+</div>

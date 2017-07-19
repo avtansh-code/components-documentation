@@ -1,0 +1,60 @@
+<div>
+    <header class="apiProfileHeader">
+        <h2 class="md-display-1">progressButton API Documentation</h1>
+    </header>
+
+
+    <div>
+        <p>
+            <code><<span>progress-button</span>></code> is a button with different states like initial, inprogress, done
+            and error.
+        </p>
+        <p>
+            you can easily specify color, text, icon for the button.
+        </p>
+
+        <p>
+            To start you would need to specify the state object. In state object, you can specify the state along with its color and
+            text to be displayed for button. you can pass a json object like
+            <pre>
+stateObject = {
+    'value': 'initial',
+    'text': 'upload', 
+    'color': '#337ab7'
+}
+</pre>
+        </p>
+        <h3>Usage</h3>
+        <div>
+            <h4>Basic Example</h4>
+            <component-doc-section title="html">
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>progress-button</span> state="stateObject" icon="publish" disabledstate="false" ></progress-button>
+                    </p>
+                </md-card-content>
+            </component-doc-section>
+        </div>
+
+        <div>
+            <br>
+            <h4>Example with interpolation</h4>
+            <p>
+                you can also use interpolation for setting icon and disabledstate attribute using variables like -
+                <pre>
+icon_name = "error"
+isDisabled = false
+</pre>
+            </p>
+            <component-doc-section title="Basic Usage">
+                <md-card-content class="md-padding">
+                    <p>
+                        <<span>progress-button state="stateObject" icon='{{</span><span>icon_name}}'' disabledstate="{{</span>isDisabled}}"
+                            ></progress-button>
+                    </p>
+                </md-card-content>
+            </component-doc-section>
+        </div>
+    </div>
+    <component-attribute-table attributes="vm.attribute"></component-attribute-table>
+</div>

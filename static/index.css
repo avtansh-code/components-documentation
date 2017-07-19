@@ -1,6 +1,7 @@
 .panel-title a { 
     cursor: pointer; 
     text-decoration: none;
+    color: inherit !important;
 }
 
 .accordionHeadingStyle > .panel-heading {
@@ -65,11 +66,11 @@ th, td {
 }
 
 tr:nth-child(even){
-    background-color: #D1DEEC;
+    background-color: #DEDDF5;
 }
 
 tr:nth-child(odd){
-    background-color: #E3ECF5;
+    background-color: #E9E8F8;
 }
 
 th {
@@ -83,4 +84,8 @@ td > p {
 
 .accordionHeadingStyle div.panel-collapse>div.panel-body{
     padding: 0px;
+}
+
+pre{
+    background-color: #E9E8F8;
 }
